@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/card",
+  "private": true,
+  "main": "./Card.js"
+}

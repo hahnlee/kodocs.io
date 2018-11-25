@@ -1,0 +1,21 @@
+.chip {
+  height: 32px;
+  border-radius: 4px;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  background-color: #f1f8ff;
+  color: #0366d6;
+  box-shadow: inset 0 0 0 1px #c8e1ff;
+  margin: 4px;
+
+  .title {
+    cursor: inherit;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

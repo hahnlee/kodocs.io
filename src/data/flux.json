@@ -1,0 +1,11 @@
+{
+  "name": "Flux",
+  "original": "http://facebook.github.io/flux/",
+  "translate": "https://haruair.github.io/flux/",
+  "logo": "flux.svg",
+  "tags": [
+    "javascript",
+    "redux",
+    "flux"
+  ]
+}

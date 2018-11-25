@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/circle-badge",
+  "private": true,
+  "main": "./CircleBadge.js"
+}

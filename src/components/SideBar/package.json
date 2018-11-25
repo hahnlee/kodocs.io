@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/side-bar",
+  "private": true,
+  "main": "./SideBar.js"
+}

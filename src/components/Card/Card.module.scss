@@ -1,0 +1,43 @@
+.card {
+  width: 33.33%;
+  padding: .5rem;
+
+  &Wrapper {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border: 1px solid #f2f5f7;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px 0 rgba(5, 57, 106, .06);
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .content {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 1rem;
+
+      .link {
+        a {
+          text-decoration: none;
+          color: #039be5;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .tagList {
+      width: 100%;
+      white-space: nowrap;
+      overflow-x: scroll;
+    }
+  }
+}

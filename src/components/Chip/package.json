@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/chip",
+  "private": true,
+  "main": "./Chip.js"
+}

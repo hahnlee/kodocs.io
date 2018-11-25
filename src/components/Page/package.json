@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/page",
+  "private": true,
+  "main": "./Page.js"
+}

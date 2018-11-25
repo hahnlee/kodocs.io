@@ -1,0 +1,10 @@
+{
+  "name": "Electron",
+  "original": "https://electronjs.org",
+  "translate": "https://electronjs.org/?lang=ko-KR",
+  "logo": "electron.svg",
+  "tags": [
+    "javascript",
+    "electron"
+  ]
+}

@@ -1,0 +1,22 @@
+.circleBadge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(27, 31, 35, .15);
+  width: 64px;
+  height: 64px;
+  padding: 1.5rem;
+
+  &Large {
+    height: 128px;
+    width: 128px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
