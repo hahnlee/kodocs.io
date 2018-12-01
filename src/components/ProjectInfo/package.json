@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/project-info",
+  "private": true,
+  "main": "./ProjectInfo.js"
+}

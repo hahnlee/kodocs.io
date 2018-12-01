@@ -4,4 +4,6 @@ export * from './NavBar';
 export * from './Page';
 export * from './PackageList';
 export * from './PackageListItem';
+export * from './ProjectInfo';
+export * from './ReadMe';
 export * from './SideBar';

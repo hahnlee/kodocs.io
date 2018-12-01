@@ -3,6 +3,9 @@
   "logo": "gulp.svg",
   "original": "https://gulpjs.com/docs/en/api/concepts",
   "translate": "https://github.com/preco21/gulp-docs-ko",
+  "repository": {
+    "url": "https://github.com/preco21/gulp-docs-ko"
+  },
   "color": "#CF4647",
   "tags": [
     "javascript",

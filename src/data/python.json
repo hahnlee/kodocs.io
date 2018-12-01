@@ -3,6 +3,9 @@
   "logo": "python.svg",
   "original": "https://docs.python.org/3",
   "translate": "https://docs.python.org/ko/3",
+  "repository": {
+    "url": "https://github.com/python/python-docs-ko"
+  },
   "tags": [
     "python"
   ]

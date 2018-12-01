@@ -2,6 +2,9 @@
   "name": "Jekyll",
   "original": "https://jekyllrb.com",
   "translate": "https://jekyllrb-ko.github.io",
+  "repository": {
+    "url": "https://github.com/jekyllrb-ko/jekyllrb-ko.github.io"
+  },
   "logo": "jekyll.png",
   "tags": [
     "ruby",

@@ -3,6 +3,9 @@
   "original": "https://redux-saga.js.org",
   "translate": "https://mskims.github.io/redux-saga-in-korean",
   "logo": "redux-saga.png",
+  "repository": {
+    "url": "https://github.com/mskims/redux-saga-in-korean/"
+  },
   "tags": [
     "javascript",
     "redux",

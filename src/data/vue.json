@@ -3,6 +3,9 @@
   "original": "https://vuejs.org",
   "translate": "https://kr.vuejs.org",
   "logo": "vue.png",
+  "repository": {
+    "url": "https://github.com/vuejs-kr/kr.vuejs.org"
+  },
   "tags": [
     "javascript",
     "vue"

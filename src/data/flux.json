@@ -3,6 +3,9 @@
   "original": "http://facebook.github.io/flux/",
   "translate": "https://haruair.github.io/flux/",
   "logo": "flux.svg",
+  "repository": {
+    "url": "https://github.com/haruair/flux"
+  },
   "tags": [
     "javascript",
     "redux",

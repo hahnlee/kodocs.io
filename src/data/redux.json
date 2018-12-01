@@ -3,6 +3,9 @@
   "original": "https://redux.js.org",
   "translate": "https://lunit.gitbook.io/redux-in-korean",
   "logo": "redux.svg",
+  "repository": {
+    "url": "https://github.com/deminoth/redux/tree/master/docs_kr"
+  },
   "tags": [
     "javascript",
     "redux",

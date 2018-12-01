@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/read-me",
+  "private": true,
+  "main": "./ReadMe.js"
+}

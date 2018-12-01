@@ -40,6 +40,9 @@ exports.createPages = ({ graphql, actions }) => {
             original
             translate
             color
+            repository {
+              url
+            }
             fields {
               slug
             }

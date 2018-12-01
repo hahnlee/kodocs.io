@@ -4,6 +4,9 @@
   "homepage": "http://d3js.org",
   "translate": "https://github.com/zziuni/d3/wiki",
   "logo": "d3.svg",
+  "repository": {
+    "url": "https://github.com/zziuni/d3"
+  },
   "tags": [
     "javascript",
     "visualization",

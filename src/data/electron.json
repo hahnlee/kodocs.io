@@ -2,6 +2,9 @@
   "name": "Electron",
   "original": "https://electronjs.org",
   "translate": "https://electronjs.org/?lang=ko-KR",
+  "repository": {
+    "url": "https://github.com/electron/i18n"
+  },
   "logo": "electron.svg",
   "tags": [
     "javascript",

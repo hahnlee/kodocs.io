@@ -3,6 +3,9 @@
   "logo": "grunt.svg",
   "original": "https://gruntjs.com",
   "translate": "http://gruntjs-kr.herokuapp.com/",
+  "repository": {
+    "url": "https://github.com/zziuni/grunt-docs"
+  },
   "tags": [
     "javascript",
     "node",
