@@ -14,6 +14,7 @@ export class PackageListItem extends Component {
       name: PropTypes.string.isRequired,
       tags: PropTypes.arrayOf(PropTypes.string),
       logo: PropTypes.string,
+      color: PropTypes.string,
       fields: PropTypes.shape({
         slug: PropTypes.string.isRequired,
       }).isRequired,
@@ -34,8 +35,11 @@ export class PackageListItem extends Component {
   }
 
   renderTags() {
-    const { data: { tags } } = this.props;
+    const { data } = this.props;
+    const { tags } = data;
+
     if (!tags || !tags.length) return null;
+
     return (
       <div className={styles.tagList}>
         {tags.map(tag => (
@@ -50,13 +54,14 @@ export class PackageListItem extends Component {
 
   render() {
     const { data } = this.props;
-    const { name, logo, fields } = data;
+    const { name, logo, fields, color } = data;
 
     return (
       <Link className={styles.packageListItem} to={`/project/${fields.slug}`}>
         <CircleBadge
           logo={logo}
           name={name}
+          color={color}
         />
         <div className={styles.content}>
           <h1>{data.name}</h1>

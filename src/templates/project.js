@@ -23,7 +23,7 @@ class Project extends Component {
 
   render() {
     const { pageContext: { node } } = this.props;
-    const { logo, name } = node;
+    const { logo, name, color } = node;
 
     return (
       <Page title={name}>
@@ -32,6 +32,7 @@ class Project extends Component {
             large
             logo={logo}
             name={name}
+            color={color}
           />
           <h1>{name}</h1>
           {this.renderTag()}

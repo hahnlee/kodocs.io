@@ -1,0 +1,10 @@
+{
+  "name": "Django",
+  "logo": "django.svg",
+  "color": "#0C4B33",
+  "tags": [
+    "python",
+    "django",
+    "backend"
+  ]
+}

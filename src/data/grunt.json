@@ -1,0 +1,11 @@
+{
+  "name": "Grunt",
+  "logo": "grunt.svg",
+  "original": "https://gruntjs.com",
+  "translate": "http://gruntjs-kr.herokuapp.com/",
+  "tags": [
+    "javascript",
+    "node",
+    "task"
+  ]
+}

@@ -14,6 +14,7 @@ class IndexPage extends Component {
           node: PropTypes.shape({
             name: PropTypes.string.isRequired,
             tags: PropTypes.arrayOf(PropTypes.string),
+            color: PropTypes.string,
             fields: PropTypes.shape({
               slug: PropTypes.string.isRequired,
             }).isRequired,
@@ -51,6 +52,7 @@ export const query = graphql`
         name
         tags
         logo
+        color
         fields {
           slug
         }

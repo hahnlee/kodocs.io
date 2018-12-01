@@ -26,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
               name
               tags
               logo
+              color
               fields {
                 slug
               }

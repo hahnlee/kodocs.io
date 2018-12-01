@@ -10,10 +10,12 @@ export class CircleBadge extends Component {
     name: PropTypes.string.isRequired,
     large: PropTypes.bool,
     logo: PropTypes.string,
+    color: PropTypes.string,
   };
 
   static defaultProps = {
     large: false,
+    color: '#F9FAFB',
   };
 
   renderLogo() {
@@ -25,10 +27,13 @@ export class CircleBadge extends Component {
   }
 
   render() {
-    const { large } = this.props;
+    const { large, color } = this.props;
 
     return (
-      <div className={classNames(styles.circleBadge, { [styles.circleBadgeLarge]: large })}>
+      <div
+        className={classNames(styles.circleBadge, { [styles.circleBadgeLarge]: large })}
+        style={{ backgroundColor: color }}
+      >
         {this.renderLogo()}
       </div>
     );
