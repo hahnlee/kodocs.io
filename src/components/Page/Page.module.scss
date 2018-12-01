@@ -1,7 +1,14 @@
 .page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: rgb(241, 243, 245);
+
+  .content {
+    flex: 1;
+    overflow-y: scroll;
+  }
 }

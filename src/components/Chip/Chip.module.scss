@@ -1,13 +1,13 @@
 .chip {
-  height: 32px;
+  font-size: .875rem;
   border-radius: 4px;
   display: inline-flex;
   vertical-align: middle;
   justify-content: center;
-  background-color: #f1f8ff;
-  color: #0366d6;
-  box-shadow: inset 0 0 0 1px #c8e1ff;
+  background-color: #E6ECF1;
+  color: #5C6975;
   margin: 4px;
+  padding: .22rem;
 
   .title {
     cursor: inherit;

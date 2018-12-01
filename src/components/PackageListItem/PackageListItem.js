@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 
 import { Chip } from '../Chip';
 import { CircleBadge } from '../CircleBadge';
 
-import styles from './Card.module.scss';
+import styles from './PackageListItem.module.scss';
 
 
-export class Card extends Component {
+export class PackageListItem extends Component {
   static propTypes = {
     data: PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -49,26 +50,19 @@ export class Card extends Component {
 
   render() {
     const { data } = this.props;
-    const { name, logo, original, translate } = data;
+    const { name, logo, fields } = data;
 
     return (
-      <div className={styles.card}>
-        <div className={styles.cardWrapper}>
-          <CircleBadge
-            large
-            logo={logo}
-            name={name}
-          />
-          <div className={styles.content}>
-            <h1>{data.name}</h1>
-            <div className={styles.link}>
-              <a href={original} target="_blink">원본</a>
-              <a href={translate} target="_blink">번역</a>
-            </div>
-            {this.renderTags()}
-          </div>
+      <Link className={styles.packageListItem} to={`/project/${fields.slug}`}>
+        <CircleBadge
+          logo={logo}
+          name={name}
+        />
+        <div className={styles.content}>
+          <h1>{data.name}</h1>
+          {this.renderTags()}
         </div>
-      </div>
+      </Link>
     );
   }
 }

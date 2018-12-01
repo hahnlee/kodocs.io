@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/package-list",
+  "private": true,
+  "main": "./PackageList.js"
+}

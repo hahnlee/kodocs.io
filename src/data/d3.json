@@ -1,0 +1,13 @@
+{
+  "name": "D3",
+  "original": "https://github.com/d3/d3/wiki",
+  "homepage": "http://d3js.org",
+  "translate": "https://github.com/zziuni/d3/wiki",
+  "logo": "d3.svg",
+  "tags": [
+    "javascript",
+    "visualization",
+    "d3",
+    "svg"
+  ]
+}

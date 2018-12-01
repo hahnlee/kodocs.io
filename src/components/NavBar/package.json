@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/nav-bar",
+  "private": true,
+  "main": "./NavBar.js"
+}

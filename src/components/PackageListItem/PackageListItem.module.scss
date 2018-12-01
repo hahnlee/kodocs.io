@@ -1,0 +1,21 @@
+.packageListItem {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: #000000;
+
+  .content {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6ECF1;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}

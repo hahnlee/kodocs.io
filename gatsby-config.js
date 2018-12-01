@@ -5,6 +5,7 @@ const srcPath = path.resolve(__dirname, 'src');
 
 module.exports = {
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

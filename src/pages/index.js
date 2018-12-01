@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { graphql } from 'gatsby';
 
-import { Card, CardList, Page } from '../components';
+import { Page, PackageList, PackageListItem } from '../components';
 
 
 class IndexPage extends Component {
@@ -28,14 +28,14 @@ class IndexPage extends Component {
 
     return (
       <Page>
-        <CardList>
+        <PackageList>
           {edges.map(({ node }) => (
-            <Card
+            <PackageListItem
               key={node.name}
               data={node}
             />
           ))}
-        </CardList>
+        </PackageList>
       </Page>
     );
   }
@@ -51,8 +51,6 @@ export const query = graphql`
         name
         tags
         logo
-        original
-        translate
         fields {
           slug
         }

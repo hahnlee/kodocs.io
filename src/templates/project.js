@@ -26,7 +26,7 @@ class Project extends Component {
     const { logo, name } = node;
 
     return (
-      <Page>
+      <Page title={name}>
         <SideBar>
           <CircleBadge
             large

@@ -11,12 +11,15 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.0.55",
+    "gatsby-plugin-react-helmet": "^3.0.3",
     "gatsby-plugin-sass": "^2.0.4",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-json": "^2.1.5",
+    "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
