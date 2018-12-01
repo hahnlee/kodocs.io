@@ -7,7 +7,6 @@ import { Page, PackageList, PackageListItem } from '../components';
 class Tag extends Component {
   render() {
     const { pageContext: { fieldValue }, data: { allDataJson: { edges } } } = this.props;
-    console.log(this.props);
 
     return (
       <Page title={fieldValue}>
