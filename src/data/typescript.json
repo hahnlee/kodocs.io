@@ -1,0 +1,10 @@
+{
+  "name": "TypeScript",
+  "logo": "typescript.svg",
+  "original": "https://www.typescriptlang.org/docs/handbook/basic-types.html",
+  "translate": "https://typescript-kr.github.io/",
+  "tags": [
+    "typescript",
+    "javascript"
+  ]
+}
