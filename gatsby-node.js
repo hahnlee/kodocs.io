@@ -3,6 +3,17 @@ const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
 
+const makeRequest = (graphql, request) => new Promise((resolve, reject) => (
+  resolve(
+    graphql(request).then((result) => {
+      if (result.errors) {
+        reject(result.errors)
+      }
+      return result;
+    })
+  )
+));
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'DataJson') {
@@ -17,24 +28,27 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-  return new Promise((resolve, reject) => {
-    graphql(`
-      {
-        allDataJson {
-          edges {
-            node {
-              name
-              tags
-              logo
-              color
-              fields {
-                slug
-              }
+
+  const projectPage = makeRequest(graphql, `
+    {
+      allDataJson {
+        edges {
+          node {
+            name
+            tags
+            logo
+            original
+            translate
+            color
+            fields {
+              slug
             }
           }
         }
       }
-    `).then(result => {
+    }
+  `)
+    .then((result) => {
       result.data.allDataJson.edges.forEach(({ node }) => {
         createPage({
           path: `project${node.fields.slug}`,
@@ -44,7 +58,31 @@ exports.createPages = ({ graphql, actions }) => {
           },
         });
       });
-      resolve();
     });
-  });
+
+  const tagPage = makeRequest(graphql, `
+    {
+      allDataJson {
+        group(field: tags) {
+          fieldValue
+        }
+      }
+    }
+  `)
+    .then((result) => {
+      result.data.allDataJson.group.forEach(({ fieldValue }) => {
+        createPage({
+          path: `tag/${fieldValue}`,
+          component: path.resolve(__dirname, 'src', 'templates', 'tag.js'),
+          context: {
+            fieldValue,
+          },
+        });
+      });
+    });
+
+  return Promise.all([
+    projectPage,
+    tagPage,
+  ]);
 };

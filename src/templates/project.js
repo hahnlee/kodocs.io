@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 import { Chip, CircleBadge, Page, SideBar } from '../components';
 
@@ -12,10 +13,9 @@ class Project extends Component {
     return (
       <div>
         {tags.map(tag => (
-          <Chip
-            key={tag}
-            title={tag}
-          />
+          <Chip key={tag}>
+            <Link to={`/tag/${tag}`}>{tag}</Link>
+          </Chip>
         ))}
       </div>
     );

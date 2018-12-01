@@ -43,10 +43,9 @@ export class PackageListItem extends Component {
     return (
       <div className={styles.tagList}>
         {tags.map(tag => (
-          <Chip
-            key={tag}
-            title={tag}
-          />
+          <Chip key={tag}>
+            <Link to={`/tag/${tag}`}>{tag}</Link>
+          </Chip>
         ))}
       </div>
     )
@@ -57,17 +56,22 @@ export class PackageListItem extends Component {
     const { name, logo, fields, color } = data;
 
     return (
-      <Link className={styles.packageListItem} to={`/project/${fields.slug}`}>
+      <section className={styles.packageListItem}>
         <CircleBadge
           logo={logo}
           name={name}
           color={color}
         />
         <div className={styles.content}>
-          <h1>{data.name}</h1>
+          <Link
+            to={`/project/${fields.slug}`}
+            className={styles.projectName}
+          >
+            {data.name}
+          </Link>
           {this.renderTags()}
         </div>
-      </Link>
+      </section>
     );
   }
 }
