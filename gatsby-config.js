@@ -5,6 +5,12 @@ const srcPath = path.resolve(__dirname, 'src');
 
 module.exports = {
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-111601591-3',
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
