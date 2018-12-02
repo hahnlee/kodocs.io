@@ -2,6 +2,26 @@
   flex: 1;
   overflow-y: scroll;
 
+  .spinnerWrapper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .messageWrapper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6ECF1;
+    color: #5C6975;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+
   .content {
     padding: 2rem 0;
   }
