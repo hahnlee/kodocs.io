@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 
-import { Chip, CircleBadge, Page, SideBar, ProjectInfo } from '../components';
+import { Chip, CircleBadge, Page, SideBar, ProjectInfo, ProjectMeta } from '../components';
 
 
 class Project extends Component {
@@ -50,6 +50,7 @@ class Project extends Component {
           />
           <h1>{name}</h1>
           {this.renderTag()}
+          <ProjectMeta data={node} />
         </SideBar>
         <ProjectInfo repository={repository} />
       </Page>

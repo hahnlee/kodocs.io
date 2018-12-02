@@ -1,0 +1,5 @@
+{
+  "name": "@kodocs.io/project-meta",
+  "private": true,
+  "main": "./ProjectMeta.js"
+}

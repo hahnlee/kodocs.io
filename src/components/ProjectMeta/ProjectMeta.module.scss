@@ -1,0 +1,21 @@
+.projectMeta {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: .75rem;
+
+  .item {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #E0E5E6 solid;
+
+    h1 {
+      color: #5C6975;
+      font-size: 1.25rem;
+      padding: .5rem 0;
+      margin: 0;
+    }
+  }
+}
