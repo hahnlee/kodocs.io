@@ -10,8 +10,8 @@ class Tag extends Component {
 
     return (
       <Page title={fieldValue}>
-        <div>
-        <h1 style={{ textAlign: 'center' }}>Tag: {fieldValue}</h1>
+        <div style={{ flex: 1 }}>
+          <h1 style={{ textAlign: 'center' }}>Tag: {fieldValue}</h1>
           <PackageList>
             {edges.map(({ node }) => (
               <PackageListItem
