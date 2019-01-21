@@ -9,7 +9,9 @@ export class NavBar extends Component {
 
     return (
       <nav className={styles.navBar}>
-        {children}
+        <div className={styles.content}>
+          {children}
+        </div>
       </nav>
     );
   }

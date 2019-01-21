@@ -1,6 +1,7 @@
 .readMe {
   flex: 1;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   .spinnerWrapper {
     width: 100%;
